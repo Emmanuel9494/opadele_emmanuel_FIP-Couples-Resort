@@ -109,13 +109,8 @@ Couples Resort Responsive Build
  }
  
  
- /* 3. ---Main Hero Image--- */
+ /* 3. ---Dinner Hero Image--- */
  
- #hero {
-    background: url(../images/412hero.jpg) no-repeat;
-    height: 200px;
- }
-
  #hero-dinner {
     background: url(../images/412-dinning-hero.jpg) no-repeat;
     height: 200px;
@@ -220,67 +215,147 @@ Couples Resort Responsive Build
   }
  
  
- #why-choose-us-hero-con {
-   background: url(../images/couples-show-412.jpg) no-repeat;
+ #daily-features {
+   background: url(../images/412-dining-2.jpg) no-repeat;
    height: 195px;
  }
  
- #why-choose-us-heading-box {
+ #daily-features-heading-box {
     align-self: end;
  }
  
- .why-choose-us-image {
+ .six-meal-image {
     float: left;
     margin-right: 20px;
     margin-top: 30px;
  }
  
- .why-choose-us-image-con h2 {
+ .six-meal-option h2 {
     font-size: 14px;
+    color: #9a2018;
     margin-bottom: 20px;
     margin-top: 30px;
  }
  
- .why-choose-us-image-con p {
+ .six-meal-option p {
     font-size: 12px;
     margin-bottom: 20px;
     line-height: 20px;
  }
  
- .why-choose-us-image-con a {
+ .six-meal-option a {
     color: #707070;
     font-size: 12px;
  }
  
-  #why-choose-us-bottom-nav {
+  #six-meal-bottom-nav {
     background-color: #9a2018;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 30px;
+   
  }
  
- #why-choose-us-bottom-nav ol {
+ #six-meal-bottom-nav ol {
     list-style-type: none;
     margin: 0 0 0 20px;
     padding: 0;
+    margin: 0 10px 0 10px;
+    text-align: center;
  }
  
- #why-choose-us-bottom-nav ol li {
-    display: inline;
+ #six-meal-bottom-nav ol li {
+    display: inline;  
+    
  }
  
- #why-choose-us-bottom-nav ol li a {
+ #six-meal-bottom-nav ol li a {
     padding: 5px;
     color: #fff;
+    text-decoration: underline solid rgb(255, 255, 255);
  }
- 
- 
+
+ #six-meal-bottom-nav ol li a:hover {
+   padding: 5px;
+   color: #fff;
+   text-decoration:none;
+}
+
+
+#six-meal-bottom-nav ol li a:visited {
+   padding: 5px;
+   color: #fff;
+   text-decoration:none;
+}
+
+
+
+ /* chef--- */
+ .chef-image {
+   float: left;
+   margin-right: 20px;
+   margin-top: 30px;
+}
+
+.chef-section h2 {
+   font-size: 14px;
+   color: #9a2018;
+   margin-bottom: 20px;
+   margin-top: 30px;
+}
+
+.chef-section p {
+   font-size: 12px;
+   margin-bottom: 20px;
+   line-height: 20px;
+}
+
+.chef-section a {
+   color: #707070;
+   font-size: 12px;
+}
+
+/* wine--- */
+.wine-image {
+   float: left;
+   margin-right: 20px;
+   margin-top: 30px;
+}
+
+.wine-section h2 {
+   font-size: 14px;
+   color: #9a2018;
+   margin-bottom: 20px;
+   margin-top: 30px;
+}
+
+.wine-section p {
+   font-size: 12px;
+   margin-bottom: 20px;
+   line-height: 20px;
+}
+
+.wine-sectiona {
+   color: #707070;
+   font-size: 12px;
+}
+
+
+
+ #patio-service {
+   background-color: #9a2018;
+   color: #fff;
+   padding: 10px;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
  
  /* 6. ---About & FAQ--- */
  
  #about-hero-con {
     background: url(../images/412-index-about.jpg) no-repeat;
     height: 195px;
+    
  }
  
  #about-hero-heading-box {
@@ -348,44 +423,44 @@ Couples Resort Responsive Build
     margin-bottom: 20px;
  }
  
- /* 7. ---Contact--- */
+ /* 7. ---Couples Resort Reservation--- */
  
- #contact-hero-con {
-    background: url(../images/412contact.jpg);
+ #rsvp-hero-con {
+    background: url(../images/412-dining-reserve.jpg) no-repeat;
     height: 195px;
  }
  
- #contact-hero-heading-box {
+ #rsvp-hero-heading-box {
     align-self: end;
  }
  
- #contact-hero-text {
+ #rsvp-hero-text {
     margin-top: 15px;
     margin-bottom: 25px;
  }
  
- #contact-hero-address p {
+ #rsvp-hero-address p {
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 22px;
  }
  
- #contact-hero-address {
+ #rsvp-hero-address {
     margin-bottom: 30px;
  }
  
- #contact-hero-address h3 {
+ #rsvp-hero-address h3 {
     margin-bottom: 25px;
  }
  
  
  
- #contact-hero-form form {
+ #rsvp-hero-form form {
     display: flex;
     flex-direction: column;
  }
  
- #contact-hero-form input, textarea {
+ #rsvp-hero-form input, textarea {
     padding: 22px;
     border: 2px solid #d6d6d6;
     background-color: #f7f7f7;
@@ -395,13 +470,13 @@ Couples Resort Responsive Build
     width: auto;
  }
  
- #contact-hero-form textarea {
+ #rsvp-hero-form textarea {
     height: 250px;
  }
  
  
  
- #contact-hero-form input[type="submit"] {
+ #rsvp-hero-form input[type="submit"] {
     padding: 12px 28px;
     background: #9a2018;
     color: #fff;
@@ -411,7 +486,7 @@ Couples Resort Responsive Build
     align-self: flex-end;
  }
  
- #contact-hero-form input[type="submit"]:hover {
+ #rsvp-hero-form input[type="submit"]:hover {
     background-color: #626262;
     border-radius: 0;
  }

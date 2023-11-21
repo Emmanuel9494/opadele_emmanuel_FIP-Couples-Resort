@@ -263,6 +263,7 @@ Couples Resort Responsive Build
     list-style-type: none;
     margin: 0 0 0 20px;
     padding: 0;
+    text-align: center;
  }
  
  #why-choose-us-bottom-nav ol li {
@@ -273,7 +274,27 @@ Couples Resort Responsive Build
     padding: 5px;
     color: #fff;
  }
- 
+
+ #why-choose-us-bottom-nav ol li a {
+   padding: 5px;
+   color: #fff;
+   text-decoration: underline solid rgb(255, 255, 255);
+}
+
+
+ #why-choose-us-bottom-nav ol li a:hover {
+   padding: 5px;
+   color: #fff;
+   text-decoration:none;
+}
+
+
+#why-choose-us-bottom-nav ol li a:visited {
+   padding: 5px;
+   color: #fff;
+   text-decoration:none;
+}
+
  
  
  /* 6. ---About & FAQ--- */
