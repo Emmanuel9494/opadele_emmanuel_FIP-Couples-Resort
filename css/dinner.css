@@ -27,6 +27,10 @@ Couples Resort Responsive Build
  #hero-dinner {
     background: url(../images/412-dinning-hero.jpg) no-repeat;
     height: 200px;
+     /*This is new-------------------DOWN--------------------DOWN----------------New Line Code----------*/
+     margin-top:150px;
+     z-index: 0;
+     /*This is new---------------------------UP-----------UP-------------------New Line Code----------*/
  }
  
  
@@ -133,6 +137,27 @@ Couples Resort Responsive Build
    text-decoration:none;
 }
 
+.peek2 {
+   display: none;
+   margin-top:-380px ;
+   background-color: #fff;
+   
+}
+
+.col-span-full.six-meal-option.peek2:target {
+   display: block;
+   animation: fadeIn 0.1s ease; /* Add a fade-in effect */
+}
+
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+
 
 
  /* chef--- */
@@ -162,7 +187,7 @@ Couples Resort Responsive Build
 
 /* wine--- */
 .wine-image {
-   float: left;
+   float: right;
    margin-right: 20px;
    margin-top: 30px;
 }

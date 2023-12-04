@@ -9,9 +9,11 @@
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/grid.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/drop.css" rel="stylesheet" type="text/css">
     <title>Welcome to The Couples Resort</title>
 </head>
     <body>
+        <div id="mobile-outline">
         <h1 class="hidden">Welcome to The Couples Resort</h1>
         <!-- Main Nav -->         
             <header class="grid-con" id="main-header">
@@ -33,7 +35,9 @@
                     </div>
                 </nav>
                 <div id="logo" class="col-span-full">
+                    <a href="index.html">
                     <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
+                </a>
                 </div>
             </header>        
         <!-- Main Hero -->
@@ -109,15 +113,65 @@
                     <a href="#">CLICK TO LEARN MORE...</a>                   
                 </div>
 
+                <div class="col-span-full why-choose-us-image-con peek" id="gourmet">
+                    <div class="why-choose-us-image">
+                        <img src="images/412-index-dinner.jpg" alt="veggies creame and chips">
+                    </div>
+                    <h2>5 Course Gourmet Dinner</h2>  
+                    <p>Escape and rejuvenate yourself and your loved one with a spa vacation. Restore your balance and find energy with one of our Spa Packages for two. Visit the packages page for details on Spa Specials.  Begin your journey to soothe by taking a spa vacation today. </p> 
+                    <p>Get the ultimate special treatment you deserve and have been waiting for in our eco friendly organic luxury Algonquin Spa or with private in-suite spa treatments.</p>   
+                    <a href="#">CLICK TO LEARN MORE...</a>                   
+                </div>
+
+                <div class="col-span-full why-choose-us-image-con peek" id="star-room">
+                    <div class="why-choose-us-image">
+                        <img src="images/412-index-starroom.jpg" alt="hotel room">
+                    </div>
+                    <h2>5 Diamond/star Room Standards</h2>  
+                    <p>Escape and rejuvenate yourself and your loved one with a spa vacation. Restore your balance and find energy with one of our Spa Packages for two. Visit the packages page for details on Spa Specials.  Begin your journey to soothe by taking a spa vacation today. </p> 
+                    <p>Get the ultimate special treatment you deserve and have been waiting for in our eco friendly organic luxury Algonquin Spa or with private in-suite spa treatments.</p>   
+                    <a href="#">CLICK TO LEARN MORE...</a>                   
+                </div>
+
+                <div class="col-span-full why-choose-us-image-con peek" id="four-seasons">
+                    <div class="why-choose-us-image">
+                        <img src="images/412-index-4seasons.jpg" alt="cottage house in snow">
+                    </div>
+                    <h2>4 Season Resort</h2>  
+                    <p>Escape and rejuvenate yourself and your loved one with a spa vacation. Restore your balance and find energy with one of our Spa Packages for two. Visit the packages page for details on Spa Specials.  Begin your journey to soothe by taking a spa vacation today. </p> 
+                    <p>Get the ultimate special treatment you deserve and have been waiting for in our eco friendly organic luxury Algonquin Spa or with private in-suite spa treatments.</p>   
+                    <a href="#">CLICK TO LEARN MORE...</a>                   
+                </div>
+
+                <div class="col-span-full why-choose-us-image-con peek" id="loyalty-rewards">
+                    <div class="why-choose-us-image">
+                        <img src="images/412-index-loyaltyrewards.jpg" alt="Gold medal">
+                    </div>
+                    <h2>Loyalty Rewards - Repeat Guests Only</h2>  
+                    <p>Escape and rejuvenate yourself and your loved one with a spa vacation. Restore your balance and find energy with one of our Spa Packages for two. Visit the packages page for details on Spa Specials.  Begin your journey to soothe by taking a spa vacation today. </p> 
+                    <p>Get the ultimate special treatment you deserve and have been waiting for in our eco friendly organic luxury Algonquin Spa or with private in-suite spa treatments.</p>   
+                    <a href="#">CLICK TO LEARN MORE...</a>                   
+                </div>
+
+                <div class="col-span-full why-choose-us-image-con peek" id="eco-friend">
+                    <div class="why-choose-us-image">
+                        <img src="images/412-index-ecofriend.jpg" alt="plant in cute pot">
+                    </div>
+                    <h2>Haliburton Spa at Couples Resort</h2>  
+                    <p>Escape and rejuvenate yourself and your loved one with a spa vacation. Restore your balance and find energy with one of our Spa Packages for two. Visit the packages page for details on Spa Specials.  Begin your journey to soothe by taking a spa vacation today. </p> 
+                    <p>Get the ultimate special treatment you deserve and have been waiting for in our eco friendly organic luxury Algonquin Spa or with private in-suite spa treatments.</p>   
+                    <a href="#"><span class="click-more">CLICK TO LEARN MORE...</span></a>                   
+                </div>
+
                 <nav class="col-span-full" id="why-choose-us-bottom-nav">
                     <h2 class="hidden">Why us bottom nav</h2>
                     <ol>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
+                        <li><a href="#hot-tub">1</a></li>
+                        <li><a href="#gourmet">2</a></li>
+                        <li><a href="#star-room">3</a></li>
+                        <li><a href="#four-seasons">4</a></li>
+                        <li><a href="#loyalty-rewards">5</a></li>
+                        <li><a href="#eco-friend">6</a></li>
                     </ol>
                 </nav>
             </div>                    
@@ -156,6 +210,7 @@
                 <div class="col-span-full">
                     <h2><span>Couples Resort</span><br>FAQ</h2>
                 </div>
+
                 <section class="col-span-full faq-items line-separator">
                     <h3>Check-in/Check-out</h3>
                 </section>
@@ -165,7 +220,7 @@
                 <section class="col-span-full faq-items">
                     <h3>Dining Hours &amp; Dress Code</h3>
                 </section>
-                <section class="col-span-full faq-items">
+                <section class="col-span-full faq-items" id="amenities-in-room">
                     <h3>Amenities In-room</h3>
                     <div id="faq-text-con">
                         <div id="faq-list-group1">
@@ -244,6 +299,7 @@
                 </div>
         </footer>
 
-        <script src="js/main.js"></script>   
+        <script src="js/main.js"></script>  
+    </div> 
     </body>
 </html>

@@ -19,7 +19,14 @@ Couples Resort Responsive Build
 
  /* 1. ---General Styles--- */
 
-
+ #mobile-outline {
+   outline: 20px solid #0b0b0b;
+   max-width: 412px;
+   max-height: 700px;
+   overflow: scroll;
+   margin: 20px auto 20px auto;
+   border-radius: 10px;
+} 
  
  body {
     color: #626262;
@@ -43,7 +50,15 @@ Couples Resort Responsive Build
  
  
  /* 2. ---Main Nav--- */
- 
+ /*This is new-------------------DOWN-------------------------DOWN----------------New Line Code----------*/
+ ##main-header{
+   width: 412px;
+   top: 0%;
+   position:fixed;
+   margin-left: 410px;  
+   background-color: rgb(255, 255, 255);
+ }
+ /*This is new---------------------------UP-----------UP-------------------New Line Code----------*/
   #main-nav label img {
     width: 20px;
     height: 20px;
@@ -109,6 +124,10 @@ Couples Resort Responsive Build
  #hero {
     background: url(../images/412hero.jpg) no-repeat;
     height: 200px;
+    /*This is new-------------------DOWN--------------------DOWN----------------New Line Code----------*/
+    margin-top:150px;
+    z-index: 0;
+    /*This is new---------------------------UP-----------UP-------------------New Line Code----------*/
  }
 
 
@@ -216,7 +235,7 @@ Couples Resort Responsive Build
    background: url(../images/couples-show-412.jpg) no-repeat;
    height: 195px;
  }
- 
+ /*
  #why-choose-us-heading-box {
     align-self: end;
  }
@@ -287,6 +306,7 @@ Couples Resort Responsive Build
    color: #fff;
    text-decoration:none;
 }
+*/
 
  
  
@@ -316,56 +336,83 @@ Couples Resort Responsive Build
  }
  
  #faq-con {
-    background-color: #f4f4f4;
-    padding-top: 35px;
-    padding-bottom: 30px;
- }
- 
- #faq-con h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
- }
- 
- #faq-con h2 span {
-    color: #9a2018;
-    font-size: 16px;
- }
- 
- .faq-items {
-    margin-bottom: 16px;
- }
- 
- .faq-items h3 {
-    background: #e8e7e7;
-    padding: 16px;
-    font-size: 16px;
- }
- 
- .faq-items ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
- }
- 
- .faq-items li {
-    padding: 8px 0;
-    border-bottom: 1px solid #9a2018;
- }   
- 
- .faq-items a {
-    color: inherit;
-    font-size: 13px;
- }
- 
- #faq-text-con {
-    margin-top: 20px;
-    margin-bottom: 20px;
- }
+   background-color: #f4f4f4;
+   padding-top: 35px;
+   padding-bottom: 30px;
+}
+
+#faq-con h2 {
+   font-size: 24px;
+   margin-bottom: 20px;
+}
+
+#faq-con h2 span {
+   color: #9a2018;
+   font-size: 16px;
+}
+
+.faq-items {
+   margin-bottom: 16px;
+}
+.faq-items h3 {
+   background: #e8e7e7;
+   padding: 16px;
+   font-size: 16px;
+}
+
+.faq-items h3::before{
+   content: "\2BC8";
+   cursor: pointer;
+      
+}
+
+.faq-items h3:active:before {
+   content: "\2BC6"; 
+   color: #9a2018;
+}
+
+.faq-items h3:active:hover {
+   color: #9a2018;
+}
+
+
+.faq-items:target h3{
+   content: "\2BC6";
+}
+
+
+.faq-items ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+.faq-items li {
+   padding: 8px 0;
+   border-bottom: 1px solid #9a2018;
+}   
+
+.faq-items a {
+   color: inherit;
+   font-size: 13px;
+}
+
+#faq-text-con {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+
+
+
+
+
+
  
  /* 7. ---Contact--- */
  
  #contact-hero-con {
-    background: url(../images/412contact.jpg);
+    background: url(../images/412contact.jpg) no-repeat;
     height: 195px;
  }
  

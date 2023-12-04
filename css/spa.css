@@ -27,6 +27,10 @@ Couples Resort Responsive Build
  #hero-spa {
     background: url(../images/412-spa-hero.jpg) no-repeat;
     height: 200px;
+     /*This is new-------------------DOWN--------------------DOWN----------------New Line Code----------*/
+     margin-top:150px;
+     z-index: 0;
+     /*This is new---------------------------UP-----------UP-------------------New Line Code----------*/
  }
  
  
@@ -159,4 +163,24 @@ Couples Resort Responsive Build
 }
  
  
- 
+.peek-spa {
+   display:none;
+   margin-top:-400px ;
+   background-color: #fff;
+   
+}
+
+.col-span-full.spa-features.peek-spa:target {
+   display: block;
+   animation: fadeIn 0.1s ease; /* Add a fade-in effect */
+}
+
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+
