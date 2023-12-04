@@ -20,29 +20,20 @@ The Couples Resort website is designed to showcase the luxury resort located on 
 
 - <a>Font Awesome</a> - Icons used for various elements.
 - <a>Google Fonts</a> - Sanchez - Font used for the website.
-- <a>Reset.css</a> - CSS file for resetting default styles.
 - <a>Grid.css</a> - CSS file for grid layout.
 - <a>Main.css</a> - Main CSS file for styling.
-- <a>Drop.css</a> - CSS file for dropdown menu styling.
 - <a>Font Awesome Kit</a> - JavaScript kit for Font Awesome icons.
 
 
 ## Project Structure
 
 - <b>`css/`</b> - Folder containing CSS files.
-  - <b>`reset.css`</b> - Resetting default styles.
   - <b>`grid.css`</b> - Grid layout styles.
   - <b>`main.css`</b> - Main styles for the website.
-  - <b>`drop.css`</b> - Styles for dropdown menus.
 - <b>`images/`</b> - Folder containing images used in the website.
-- <b>`js/`</b> - Folder containing JavaScript files.
-
-  - <b>`main.js`</b> - Main JavaScript file for the website.
 - <b>`index.html`</b> - Main HTML file for the home page.
 - <b>`dinning.html`</b> - HTML file for the dining page.
-
 - <b>`spa.html`</b> - HTML file for the spa activities page.
-
 - <b>`README.md`</b>- This README file.
 
 ## Usage
