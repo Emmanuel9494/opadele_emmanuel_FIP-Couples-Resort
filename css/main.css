@@ -16,16 +16,24 @@ Couples Resort Responsive Build
     8.  Footer 
  */
 
+ /* ---Mini CSS reset--- */
+
+body, p, h1, h2, h3, h4, h5 {
+   margin: 0px; 
+   padding: 0px;
+}
+
 
  /* 1. ---General Styles--- */
 
  #mobile-outline {
    outline: 20px solid #0b0b0b;
-   max-width: 412px;
+   max-width: 422px;
    max-height: 700px;
    overflow: scroll;
    margin: 20px auto 20px auto;
    border-radius: 10px;
+   position: relative;
 } 
  
  body {
@@ -51,11 +59,9 @@ Couples Resort Responsive Build
  
  /* 2. ---Main Nav--- */
  /*This is new-------------------DOWN-------------------------DOWN----------------New Line Code----------*/
- ##main-header{
-   width: 412px;
-   top: 0%;
-   position:fixed;
-   margin-left: 410px;  
+ #main-header{
+   width: 375px;
+   position:fixed;  
    background-color: rgb(255, 255, 255);
  }
  /*This is new---------------------------UP-----------UP-------------------New Line Code----------*/
@@ -126,9 +132,34 @@ Couples Resort Responsive Build
     height: 200px;
     /*This is new-------------------DOWN--------------------DOWN----------------New Line Code----------*/
     margin-top:150px;
-    z-index: 0;
+    -z-index: 0;
     /*This is new---------------------------UP-----------UP-------------------New Line Code----------*/
  }
+
+ /* 3. ---Dinner Hero Image--- */
+ 
+ #hero-dinner {
+   background: url(../images/412-dinning-hero.jpg) no-repeat;
+   height: 200px;
+    /*This is new-------------------DOWN--------------------DOWN----------------New Line Code----------*/
+    margin-top:150px;
+    z-index: 0;
+    /*This is new---------------------------UP-----------UP-------------------New Line Code----------*/
+}
+
+/* 3. ---Main Hero Image--- */
+ 
+
+#hero-spa {
+   background: url(../images/412-spa-hero.jpg) no-repeat;
+   height: 200px;
+    /*This is new-------------------DOWN--------------------DOWN----------------New Line Code----------*/
+    margin-top:150px;
+    z-index: 0;
+    /*This is new---------------------------UP-----------UP-------------------New Line Code----------*/
+}
+
+
 
 
  
@@ -235,80 +266,465 @@ Couples Resort Responsive Build
    background: url(../images/couples-show-412.jpg) no-repeat;
    height: 195px;
  }
- /*
  #why-choose-us-heading-box {
+   align-self: end;
+}
+
+.why-choose-us-image {
+   float: left;
+   margin-right: 20px;
+   margin-top: 30px;
+}
+
+.why-choose-us-image-con h2 {
+   font-size: 14px;
+   color: #9a2018;
+   margin-bottom: 20px;
+   margin-top: 30px;
+}
+
+.why-choose-us-image-con h2 {
+   font-size: 14px;
+   margin-bottom: 20px;
+   margin-top: 30px;
+}
+
+.why-choose-us-image-con p {
+   font-size: 12px;
+   margin-bottom: 20px;
+   line-height: 20px;
+}
+
+.why-choose-us-image-con a {
+   color: #707070;
+   font-size: 12px;
+}
+
+ #why-choose-us-bottom-nav {
+   background-color: #9a2018;
+   padding: 10px;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+#why-choose-us-bottom-nav ol {
+   list-style-type: none;
+   margin: 0 0 0 20px;
+   padding: 0;
+   text-align: center;
+}
+
+#why-choose-us-bottom-nav ol li {
+   display: inline;
+   margin: 0 0 0 20px;
+}
+
+#why-choose-us-bottom-nav ol li a {
+   padding: 5px;
+   color: #fff;
+}
+
+#why-choose-us-bottom-nav ol li a {
+  padding: 5px;
+  color: #fff;
+  text-decoration: underline solid rgb(255, 255, 255);
+}
+
+
+#why-choose-us-bottom-nav ol li a:hover {
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+#why-choose-us-bottom-nav ol li a:visited {
+  padding: 5px;
+  color: #fff;
+  text-decoration:none;
+}
+
+
+.peek {
+   display: none;
+   margin-top:-350px ;
+   background-color: #fff;
+}
+
+.col-span-full.why-choose-us-image-con.peek:target {
+   display: block;
+   animation: fadeIn 0.1s ease; /* Add a fade-in effect */
+}
+
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+
+
+#daily-features {
+   background: url(../images/412-dining-2.jpg) no-repeat;
+   height: 195px;
+ }
+ 
+ #daily-features-heading-box {
     align-self: end;
  }
  
- .why-choose-us-image {
+ .six-meal-image {
     float: left;
     margin-right: 20px;
     margin-top: 30px;
  }
  
- .why-choose-us-image-con h2 {
+ .six-meal-option h2 {
     font-size: 14px;
+    color: #9a2018;
     margin-bottom: 20px;
     margin-top: 30px;
  }
  
- .why-choose-us-image-con p {
+ .six-meal-option p {
     font-size: 12px;
     margin-bottom: 20px;
     line-height: 20px;
  }
  
- .why-choose-us-image-con a {
+ .six-meal-option a {
     color: #707070;
     font-size: 12px;
  }
  
-  #why-choose-us-bottom-nav {
+  #six-meal-bottom-nav {
+    background-color: #9a2018;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+   
+ }
+ 
+ #six-meal-bottom-nav ol {
+    list-style-type: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+    margin: 0 10px 0 10px;
+    text-align: center;
+ }
+ 
+ #six-meal-bottom-nav ol li {
+    display: inline;  
+    margin: 0 0 0 20px;
+    
+ }
+ 
+ #six-meal-bottom-nav ol li a {
+    padding: 5px;
+    color: #fff;
+    text-decoration: underline solid rgb(255, 255, 255);
+ }
+
+ #six-meal-bottom-nav ol li a:hover {
+   padding: 5px;
+   color: #fff;
+   text-decoration:none;
+}
+
+
+#six-meal-bottom-nav ol li a:visited {
+   padding: 5px;
+   color: #fff;
+   text-decoration:none;
+}
+
+.peek2 {
+   display: none;
+   margin-top:-380px ;
+   background-color: #fff;
+   
+}
+
+.col-span-full.six-meal-option.peek2:target {
+   display: block;
+   animation: fadeIn 0.1s ease; /* Add a fade-in effect */
+}
+
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+
+
+
+ /* chef--- */
+ .chef-image {
+   float: left;
+   margin-right: 20px;
+   margin-top: 30px;
+}
+
+.chef-section h2 {
+   font-size: 14px;
+   color: #9a2018;
+   margin-bottom: 20px;
+   margin-top: 30px;
+}
+
+.chef-section p {
+   font-size: 12px;
+   margin-bottom: 20px;
+   line-height: 20px;
+}
+
+.chef-section a {
+   color: #707070;
+   font-size: 12px;
+}
+
+/* wine--- */
+.wine-image {
+   float: right;
+   margin-right: 20px;
+   margin-top: 30px;
+}
+
+.wine-section h2 {
+   font-size: 14px;
+   color: #9a2018;
+   margin-bottom: 20px;
+   margin-top: 30px;
+}
+
+.wine-section p {
+   font-size: 12px;
+   margin-bottom: 20px;
+   line-height: 20px;
+}
+
+.wine-sectiona {
+   color: #707070;
+   font-size: 12px;
+}
+
+
+
+ #patio-service {
+   background-color: #9a2018;
+   color: #fff;
+   padding: 10px;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+ 
+ 
+ 
+ /* 7. ---Couples Resort Reservation dinning--- */
+ 
+ #rsvp-hero-con {
+    background: url(../images/412-dining-reserve.jpg) no-repeat;
+    height: 195px;
+ }
+ 
+ #rsvp-hero-heading-box {
+    align-self: end;
+ }
+ 
+ #rsvp-hero-text {
+    margin-top: 15px;
+    margin-bottom: 25px;
+ }
+ 
+ #rsvp-hero-address p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px;
+ }
+ 
+ #rsvp-hero-address {
+    margin-bottom: 30px;
+ }
+ 
+ #rsvp-hero-address h3 {
+    margin-bottom: 25px;
+ }
+ 
+ 
+ 
+ #rsvp-hero-form form {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ #rsvp-hero-form input, textarea {
+    padding: 22px;
+    border: 2px solid #d6d6d6;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font: inherit;
+    width: auto;
+ }
+ 
+ #rsvp-hero-form textarea {
+    height: 250px;
+ }
+ 
+ 
+ 
+ #rsvp-hero-form input[type="submit"] {
+    padding: 12px 28px;
+    background: #9a2018;
+    color: #fff;
+    border: none;
+    transition: all 200ms ease-in;
+    width: 150px;
+    align-self: flex-end;
+ }
+ 
+ #rsvp-hero-form input[type="submit"]:hover {
+    background-color: #626262;
+    border-radius: 0;
+ }
+ /*-----------------------------------------------------------*/
+  
+ #policy-summary p {
+   font-size: 14px;
+   line-height: 22px;
+   margin-bottom: 20px;
+}
+
+#cancel-summary p {
+   font-size: 14px;
+   line-height: 22px;
+   margin-bottom: 20px;
+}
+ 
+ 
+ #spa-daily-features {
+   background: url(../images/412-spa-2.jpg) no-repeat;
+   height: 195px;
+ }
+
+ #spa-policies {
+   background: url(../images/412-spa-policies.jpg) no-repeat;
+   height: 195px;
+ }
+
+ #spa-cancel {
+   background: url(../images/412-spa-3.jpg) no-repeat;
+   height: 195px;
+ }
+ 
+ #spa-heading-box {
+    align-self: end;
+ }
+
+ #spa-policy-headbox {
+   align-self: end;
+}
+
+#spa-cancel-headbox {
+   align-self: end;
+}
+ 
+ .spa-image {
+    float: left;
+    margin-right: 20px;
+    margin-top: 30px;
+ }
+
+ .spa-image2 {
+   float: right;
+   margin-right: 20px;
+   margin-top: 30px;
+}
+ 
+ .spa-features h2 {
+    font-size: 14px;
+    color:#9a2018;
+    margin-bottom: 20px;
+    margin-top: 30px;
+ }
+ 
+ .spa-features p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 20px;
+ }
+ 
+ .spa-features a {
+    color: #707070;
+    font-size: 12px;
+ }
+ 
+  #spa-bottom-nav {
     background-color: #9a2018;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 30px;
  }
  
- #why-choose-us-bottom-nav ol {
+ #spa-bottom-nav ol {
     list-style-type: none;
     margin: 0 0 0 20px;
     padding: 0;
     text-align: center;
  }
  
- #why-choose-us-bottom-nav ol li {
+ #spa-bottom-nav ol li {
     display: inline;
     margin: 0 0 0 20px;
  }
  
- #why-choose-us-bottom-nav ol li a {
+ #spa-bottom-nav ol li a {
     padding: 5px;
     color: #fff;
+    text-decoration: underline solid rgb(255, 255, 255);
  }
-
- #why-choose-us-bottom-nav ol li a {
-   padding: 5px;
-   color: #fff;
-   text-decoration: underline solid rgb(255, 255, 255);
-}
-
-
- #why-choose-us-bottom-nav ol li a:hover {
-   padding: 5px;
-   color: #fff;
-   text-decoration:none;
-}
-
-
-#why-choose-us-bottom-nav ol li a:visited {
-   padding: 5px;
-   color: #fff;
-   text-decoration:none;
-}
-*/
-
  
+ #spa-bottom-nav ol li a:hover {
+   padding: 5px;
+   color: #fff;
+   text-decoration:none;
+}
+
+
+#spa-bottom-nav ol li a:visited {
+   padding: 5px;
+   color: #fff;
+   text-decoration:none;
+}
+ 
+ 
+.peek-spa {
+   display:none;
+   margin-top:-400px ;
+   background-color: #fff;
+   
+}
+
+.col-span-full.spa-features.peek-spa:target {
+   display: block;
+   animation: fadeIn 0.1s ease; /* Add a fade-in effect */
+}
+
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+
+
  
  /* 6. ---About & FAQ--- */
  
@@ -437,6 +853,7 @@ Couples Resort Responsive Build
  
  #contact-hero-address h3 {
     margin-bottom: 25px;
+    color: #9a2018;
  }
  
  
@@ -477,6 +894,7 @@ Couples Resort Responsive Build
     border-radius: 0;
  }
  
+
  
  /* 8. ---Footer--- */
 
